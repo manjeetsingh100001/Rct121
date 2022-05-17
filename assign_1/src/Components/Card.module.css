@@ -1,0 +1,21 @@
+.mn{
+    display: flex;
+    width: 450px;
+    margin: auto;
+    border: 2px solid black;
+    margin-top: 20px;
+    border-radius: 5%;
+}
+.left{
+    width: 50px;
+    height: 50px;
+border: 2px solid black;
+border-radius: 50%;
+}
+.right{
+    width: 330px;
+    padding-left: 20px;
+    margin-left: 50px;
+    border: 2px solid black;
+    border-radius: 5%;
+}
