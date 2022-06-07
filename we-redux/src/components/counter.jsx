@@ -1,5 +1,5 @@
 
-import { incrementCountAction } from "../redux/counter/action";
+import { incrementCountAction,decrementCountAction } from "../redux/counter/action";
 import { useDispatch, useSelector } from "react-redux";
 function Counter(){
     const count = useSelector((state) => {
@@ -13,6 +13,7 @@ function Counter(){
            <h1>Count: {count}</h1>
       <button onClick={() => dispatch(incrementCountAction(1))}>ADD</button>
       <button onClick={() => dispatch(incrementCountAction(-1))}>REDUCE</button>
+      <button onClick={() => dispatch(decrementCountAction(1))}>realREDUCE</button>
       <br />
         
         </>

@@ -12,10 +12,4 @@ export const appActions = {
       payload: count
     };
   };
-  export const decrementCountAction = (count) => {
-    return {
-      type: appActions.DECREMENT_COUNT,
-      payload: count
-    };
-  };
   

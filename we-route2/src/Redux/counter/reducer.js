@@ -7,7 +7,6 @@ const initState = {
 export const counterReducer = (state = initState, action) => {
   switch (action.type) {
     case appActions.INCREMENT_COUNT: {
-      console.log("1",action);
       const value = state.count + action.payload;
       localStorage.setItem("counter", value);
       return {
@@ -16,7 +15,6 @@ export const counterReducer = (state = initState, action) => {
       };
     }
     case appActions.DECREMENT_COUNT: {
-      console.log("2",action);
       const value = state.count - action.payload;
       localStorage.setItem("counter", value);
       return {

@@ -49,6 +49,7 @@ export const todosReducer = (state = initState, action) => {
         error: true
       };
     }
-    default:return state;
+    default:
+      return state;
   }
 };
